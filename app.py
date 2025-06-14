@@ -5,16 +5,16 @@ import pandas as pd
 import pickle
 
 # Load the trained model
-model = tf.keras.models.load_model('ANN_Project/model.h5')
+model = tf.keras.models.load_model('model.h5')
 
 # Load the encoders and scaler
-with open('ANN_Project/label_encoder_gender.pkl', 'rb') as file:
+with open('label_encoder_gender.pkl', 'rb') as file:
     label_encoder_gender = pickle.load(file)
 
-with open('ANN_Project/geo_encoder_oneHot.pkl', 'rb') as file:
+with open('geo_encoder_oneHot.pkl', 'rb') as file:
     geo_oh_encoder = pickle.load(file)
 
-with open('ANN_Project/StandardScaler.pkl', 'rb') as file:
+with open('StandardScaler.pkl', 'rb') as file:
     scaler = pickle.load(file)
 
 
