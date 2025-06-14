@@ -3,4 +3,4 @@ numpy
 pandas
 ipykernel
 streamlit
-tensorflow
+tensorflow==2.13.0
